@@ -2,7 +2,8 @@
 
 This set of scripts parses a BLAST m8 file (BLAST tabular output file) for results that sequences derived from vertebrate sources.  
 
-This tool includes these scripts  
+This tool includes the following scripts:  
+  
 recursive\_binary\_search.py: used as a module in GItaxidIsVert.py  
 GItaxidIsVert.py: primary script  
 
