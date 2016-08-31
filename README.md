@@ -1,9 +1,15 @@
 # GItaxidIsVert
 
+This set of scripts parses a BLAST m8 file (BLAST tabular output file) for results that sequences derived from vertebrate sources.  
+
+This tool includes these scripts  
+recursive\_binary\_search.py: used as a module in GItaxidIsVert.py  
+GItaxidIsVert.py: primary script  
+
 
 ### GItaxidIsVert.py options
 
-$ python GItaxidIsVert.py
+$ python GItaxidIsVert.py  
 ```
 Usage: GItaxidIsVert.py <blast_m8_fmt_file> [-e <eval_filter#>] [-t|-a] [-n] [-c]
        Writes out m8 records that are vertebrates.
@@ -19,5 +25,5 @@ Usage: GItaxidIsVert.py <blast_m8_fmt_file> [-e <eval_filter#>] [-t|-a] [-n] [-c
 ### Authorship
 
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
-GItaxidIsVert author: James B. Henderson, jhenderson@calacademy.org  
+GItaxidIsVert.py author: James B. Henderson, jhenderson@calacademy.org  
 README.md authors: Zachary R. Hanna, James B. Henderson  
