@@ -18,6 +18,6 @@ Usage: GItaxidIsVert.py <blast_m8_fmt_file> [-e <eval_filter#>] [-t|-a] [-n] [-c
 
 ### Authorship
 
-recursive\_binary\_search.py author: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
+recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
 GItaxidIsVert author: James B. Henderson, jhenderson@calacademy.org  
 README.md authors: Zachary R. Hanna, James B. Henderson  
