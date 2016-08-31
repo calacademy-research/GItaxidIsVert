@@ -7,6 +7,9 @@ This tool includes the following scripts:
 recursive\_binary\_search.py: used as a module in GItaxidIsVert.py  
 GItaxidIsVert.py: primary script  
   
+### Usage
+$ git clone https://github.com/calacademy-research/GItaxidIsVert.git  
+  
 ### GItaxidIsVert.py options
   
 $ python GItaxidIsVert.py  
