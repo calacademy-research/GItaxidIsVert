@@ -25,7 +25,8 @@ Usage: GItaxidIsVert.py <blast_m8_fmt_file> [-e <eval_filter#>] [-t|-a] [-n] [-c
        -c writes out a comment line with gi number,tax_id and type instead of m8 record.
 ```
   
-### Authorship
+#### Citing
+#### Authorship
   
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
 GItaxidIsVert.py author: James B. Henderson, jhenderson@calacademy.org  
