@@ -16,20 +16,20 @@ $ git clone https://github.com/calacademy-research/GItaxidIsVert.git
 \# You can choose to follow all or parts of this tutorial.  
   
 \# If you want to perform a BLAST to a local copy of NCBI's nt database,  
-\# First obtain the PERL script "update\_blastdb.pl" from XXX  
+\# First use the Perl script "update\_blastdb.pl" found in the bin directory of your installed BLAST+ package  
 \# Then do the following in an empty directory:  
 $ perl update_blastdb.pl --timeout 300 --force --verbose nt  
 \# Uncompress the downloaded files with your favorite method  
 $ for f in *.tar.gz; do tar xvfz $f; done  
   
 \# Perform a BLAST search  
-$ blastn -db \<\/path/to/downloaded/NCBI/database/nt\> -query \<\fasta\_query\_file\> -outfmt 10 -out \<\BLAST\_output\_file.m8\>  
+$ blastn -db \<\/path/to/downloaded/NCBI/database/nt\> -query \<fasta\_query\_file\> -outfmt 10 -out \<BLAST\_output\_file.m8\>  
   
 \# The next sections are more relevant specifically to GItaxidIsVert.py  
   
 \# Obtain the following and uncompress them  
-$ wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz  
-$ wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/gi\_taxid\_nucl.dmp.gz    
+$ wget <ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz>  
+$ wget <ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz>    
 $ tar xvfz taxdump.tar.gz  
 $ gunzip gi\_taxid\_nucl.dmp.gz  
 
