@@ -1,6 +1,6 @@
 # GItaxidIsVert
 
-This set of scripts parses a BLAST m8 file (BLAST tabular output file) for results that sequences derived from vertebrate sources.  
+This set of scripts parses a BLAST m8 file (BLAST tabular output file) for results that are sequences derived from vertebrate sources.  
   
 ### Contents
 This tool includes the following scripts:  
