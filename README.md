@@ -23,7 +23,7 @@ $ perl update_blastdb.pl --timeout 300 --force --verbose nt
 $ for f in *.tar.gz; do tar xvfz $f; done  
   
 \# Perform a BLAST search  
-$ blastn -db \<\/path/to/downloaded/NCBI/database/nt\> -query \<fasta\_query\_file\> -outfmt 10 -out \<BLAST\_output\_file.m8\>  
+$ blastn -db \</path/to/downloaded/NCBI/database/nt\> -query \<fasta\_query\_file\> -outfmt 10 -out \<BLAST\_output\_file.m8\>  
   
 \# The next sections are more relevant specifically to GItaxidIsVert.py  
   
@@ -35,13 +35,13 @@ $ gunzip gi\_taxid\_nucl.dmp.gz
 
 \# Make a list of all of the GenBank GIs that are vertebrates in the same directory as the files above  
 \# You need to execute this in the same directory as the .dmp files or provide the full path to the nodes.dmp file  
-$ nodes\_to\_vertebrate\_ids.py \<\nodes.dmp\> >vert\_ids.dmp  
+$ nodes\_to\_vertebrate\_ids.py \<nodes.dmp\> >vert\_ids.dmp  
 
 \# The directory where your .dmp files are is hard-coded into the script, so you will need to do the following:  
 \# Get the full path to the directory where the above .dmp files are found
 $ pwd  
 
-$ GItaxidIsVert.py \<\BLAST\_output\_file.m8\>  
+$ GItaxidIsVert.py \<BLAST\_output\_file.m8\>  
   
 ### GItaxidIsVert.py options
   
@@ -66,5 +66,6 @@ Usage: GItaxidIsVert.py <blast_m8_fmt_file> -dmpDir </path/to/dmp/directory/> [-
 #### Authorship
   
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
-GItaxidIsVert.py author: James B. Henderson, jhenderson@calacademy.org  
+nodes_to_vertebrate_ids.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
+GItaxidIsVert.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
 README.md authors: Zachary R. Hanna, James B. Henderson  
