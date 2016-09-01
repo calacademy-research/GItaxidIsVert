@@ -10,9 +10,6 @@ import sys
 import recursive_binary_search
 import imp
 
-dmpDir = '/data/commonOwl/bin/NCBI_taxonomy/'
-taxidFile  = dmpDir + 'gi_taxid_nucl.dmp'  # was '/data/commonVirus/NCBI_taxonomy/gi_taxid.dmp'
-vertidFile = dmpDir + 'vert_ids.dmp'
 blastFile = ""
 vert_ids = {} # map to hold ids of vertebrates (just maps to True so we get quick look up)
 
@@ -23,10 +20,14 @@ curQuery = ""
 allHits = False # if False then only top of a query's hits will be output, otherwise all that pass filter will
 
 def usage():
-    print "Usage: GItaxidIsVert.py <blast_m8_fmt_file> [-e <eval_filter#>] [-t|-a] [-n] [-c]\n" \
+    print "Usage: GItaxidIsVert.py <blast_m8_fmt_file> -dmpDir </path/to/dmp/directory/> [-e <eval_filter#>] [-t|-a] [-n] [-c]\n" \
           "       Writes out m8 records that are vertebrates.\n\n" \
-          "       -e eval_filter# sets an eVal number the record must be <= to to be output. Default is 1e-12\n" \
+          "       -e eval_filter # sets an eVal number the record must be <= to to be output. Default is 1e-12\n" \
           "          Don't forget a number before e (usually 1) and to use a minus sign after e.\n" \
+          "       -dmpDir /path/to/dmp/directory/ # provide full path to directory holding the following dmp files:\n" \
+          "            gi_taxid_nucl.dmp\n" \
+          "            vert_ids.dmp\n" \
+          "          Don't forget to use a '/' at the end of the path.\n" \
           "       -a all hits of suitable eValue for each query\n" \
           "       -t only top hit for each query (default)\n" \
           "       -n reverses meaning so you get nonvertebrates.\n" \
@@ -55,7 +56,7 @@ def passesFilter(line):
     return False
     
 def getopts():
-    global blastFile, showVerts, filter, comment, allHits
+    global blastFile, showVerts, filter, comment, allHits, dmpDir, taxidFile, vertidFile
     ix = 1
     while ix < len(sys.argv):
         arg = sys.argv[ix]
@@ -65,6 +66,12 @@ def getopts():
             comment = True
         elif arg == '-t': # only show top hit that passes the eVal filter (default)
             allHits = False
+        elif arg == '-dmpDir': # directory of .dmp files
+            ix += 1
+            if ix < len(sys.argv):
+                dmpDir = sys.argv[ix]
+                taxidFile  = dmpDir + 'gi_taxid_nucl.dmp'
+                vertidFile = dmpDir + 'vert_ids.dmp'
         elif arg == '-a': # show all hits that passes the eVal filter
             allHits = True
         elif arg == '-e': # eVal filter flag
