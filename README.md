@@ -5,7 +5,7 @@ This set of scripts parses a BLAST m8 file (BLAST tabular output file) for resul
 ### Contents
 This tool includes the following scripts:  
 recursive\_binary\_search.py: used as a module in GItaxidIsVert.py  
-nodes\_to\_vertebrate\_ids.py: used to make a list of all of the GenBank GIs that are vertebrates  
+nodes\_to\_vertebrate\_ids.py: used to process nodes.dmp file and output a list of all of the GenBank GIs that are vertebrates  
 GItaxidIsVert.py: primary script  
   
 ### Usage
@@ -37,11 +37,11 @@ $ gunzip gi\_taxid\_nucl.dmp.gz
 \# You need to execute this in the same directory as the .dmp files or provide the full path to the nodes.dmp file  
 $ nodes\_to\_vertebrate\_ids.py nodes.dmp >vert\_ids.dmp  
 
-\# The directory where your .dmp files are is hard-coded into the script, so you will need to do the following:  
+\# You will need to supply the path to the directory where your .dmp files are located
 \# Get the full path to the directory where the above .dmp files are found
 $ pwd  
 
-$ GItaxidIsVert.py \<BLAST\_output\_file.m8\>  
+$ GItaxidIsVert.py \<BLAST\_output\_file.m8\> -dmpDir \</path/to/dmp/directory/\>  
   
 ### GItaxidIsVert.py options
   
@@ -69,6 +69,6 @@ NCBI taxonomy database: http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/i
 #### Authorship
   
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
-nodes_to_vertebrate_ids.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
+nodes\_to\_vertebrate\_ids.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
 GItaxidIsVert.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
 README.md authors: Zachary R. Hanna, James B. Henderson  
