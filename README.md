@@ -16,7 +16,7 @@ $ git clone https://github.com/calacademy-research/GItaxidIsVert.git
 \# You can choose to follow all or parts of this tutorial.  
   
 \# If you want to perform a BLAST to a local copy of NCBI's nt database,  
-\# First use the Perl script "update\_blastdb.pl" found in the bin directory of your installed BLAST+ package  
+\# First find the Perl script "update\_blastdb.pl" found in the bin directory of your installed BLAST+ package  
 \# Then do the following in an empty directory:  
 $ perl update_blastdb.pl --timeout 300 --force --verbose nt  
 \# Uncompress the downloaded files with your favorite method  
