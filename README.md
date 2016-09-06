@@ -35,7 +35,7 @@ $ gunzip gi\_taxid\_nucl.dmp.gz
 
 \# Make a list of all of the GenBank GIs that are vertebrates in the same directory as the files above  
 \# You need to execute this in the same directory as the .dmp files or provide the full path to the nodes.dmp file  
-$ nodes\_to\_vertebrate\_ids.py \<nodes.dmp\> >vert\_ids.dmp  
+$ nodes\_to\_vertebrate\_ids.py nodes.dmp >vert\_ids.dmp  
 
 \# The directory where your .dmp files are is hard-coded into the script, so you will need to do the following:  
 \# Get the full path to the directory where the above .dmp files are found
@@ -63,6 +63,9 @@ Usage: GItaxidIsVert.py <blast_m8_fmt_file> -dmpDir </path/to/dmp/directory/> [-
 ```
   
 ### Citing
+
+NCBI taxonomy database: http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite
+
 #### Authorship
   
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
