@@ -41,7 +41,8 @@ $ nodes\_to\_vertebrate\_ids.py nodes.dmp >vert\_ids.dmp
 \# Get the full path to the directory where the above .dmp files are found
 $ pwd  
 
-$ GItaxidIsVert.py \<BLAST\_output\_file.m8\> -dmpDir \</path/to/dmp/directory/\>  
+$ cd GItaxidIsVert  
+$ python GItaxidIsVert.py \<BLAST\_output\_file.m8\> -dmpDir \</path/to/dmp/directory/\>  
   
 ### GItaxidIsVert.py options
   
