@@ -73,3 +73,6 @@ recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/quest
 nodes\_to\_vertebrate\_ids.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
 GItaxidIsVert.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
 README.md authors: Zachary R. Hanna, James B. Henderson  
+
+#### Version 1.0.0
+[![DOI](https://zenodo.org/badge/67075579.svg)](https://zenodo.org/badge/latestdoi/67075579)
