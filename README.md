@@ -70,9 +70,9 @@ NCBI taxonomy database: http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/i
 #### Authorship
   
 recursive\_binary\_search.py authors: Joe Koberg (http://stackoverflow.com/questions/744256/reading-huge-file-in-python), Zena Ng  
-nodes\_to\_vertebrate\_ids.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
-GItaxidIsVert.py authors: James B. Henderson, jhenderson@calacademy.org; Zachary R. Hanna  
-README.md authors: Zachary R. Hanna, James B. Henderson  
+nodes\_to\_vertebrate\_ids.py authors: James B. Henderson, <a href="https://orcid.org/0000-0002-0210-7261" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em," alt="ORCID iD icon">Zachary R. Hanna</a>  
+GItaxidIsVert.py authors: James B. Henderson, <a href="https://orcid.org/0000-0002-0210-7261" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em," alt="ORCID iD icon">Zachary R. Hanna</a>  
+README.md authors: <a href="https://orcid.org/0000-0002-0210-7261" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em," alt="ORCID iD icon">Zachary R. Hanna</a>, James B. Henderson  
 
 #### Version 1.0.0
 [![DOI](https://zenodo.org/badge/67075579.svg)](https://zenodo.org/badge/latestdoi/67075579)
